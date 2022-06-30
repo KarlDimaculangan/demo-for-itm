@@ -112,9 +112,7 @@ def shift_by_letter(letter, letter_shift):
     
     if letter==" ":
         return(str(" "))
-    elif letter==letter_shift:
-        return(str(letter))
-    elif letter!=letter_shift:
+    else:
         index1=alphabet.index(letter)
         index2=alphabet.index(letter_shift)
         shifted=(index1+index2)%26
